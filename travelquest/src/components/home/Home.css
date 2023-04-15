@@ -1,0 +1,225 @@
+.container {
+    display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.container > div {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  }
+
+  .item {
+    width: 25%;
+    box-sizing: border-box;
+  }
+  .item-trips {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+  
+  /* Top grid */
+  .grid-container {
+      display: grid;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-columns: 30% 17.5% 17.5% 17.5% 17.5%;
+      background-color: #3b7e52;
+      font-size: 1.5vw;
+      padding: 5px;
+      /* border: #1e1c1c solid 1px; */
+    }
+    
+    .grid-item {
+      border: 1px double rgba(0, 0, 0, 0.8);
+      background-color: rgba(248, 248, 248, 0.8);
+      padding: 20px;
+      font-size: 20px;
+      font-size: 1.5vw;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    /* Added tasks list */
+    .grid-container-tasks {
+      display: grid;
+      grid-template-columns: 30% 17% 17% 17% 17% 2% ;
+      border: 10px solid #FFFACA;
+      background-color: #3b7e52;
+      padding: 3px;
+      margin: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .grid-container-tasks-button {
+      display: grid;
+      grid-template-columns: 30% 17% 17% 17% 16% 3%;
+      background-color: rgba(114, 114, 114, 0.8);
+      padding: 10px;
+      margin: 2px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .grid-item-tasks {
+      /* background-color: rgba(255, 255, 255, 0.8); */
+      color: white;
+      padding: 22px;
+      padding-bottom: 5px;
+      font-size: 20px;
+      font-size: 1.5vw;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .grid-item-tasks-title {
+      /* background-color: rgba(255, 255, 255, 0.8); */
+      color: white;
+      display: block;
+      overflow-wrap:break-word;
+      padding: 23px;
+      font-size: 20px;
+      font-size: 1.5vw;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .grid-item-tasks-status {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: block;
+      overflow-wrap:break-word;
+      padding: 6% 0 0 0;
+      font-size: 20px;
+      font-size: 1.5vw;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .grid-item-tasks-delete {
+      background-color:  #3b7e52;
+      font-size: 10px;
+      text-align: left;
+    }
+
+    .delete-btn {
+      margin-top: 23px;
+      -webkit-border-radius: 60;
+      -moz-border-radius: 60;
+      border-radius: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      font-size: 15px;
+      background: #e81515;
+      padding: 2px 10px 4px 10px;
+      text-decoration: none;
+    }
+    
+    .delete-btn:hover {
+      background: #e86a6a;
+      text-decoration: none;
+    }
+  
+    .edit-button {
+      background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+      margin-top: 23px;
+      margin-right: 3%;
+      background-color:#44c767;
+      border-radius:42px;
+      border:2px solid #18ab29;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:12px;
+      padding:4px 5px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #2f6627;
+    }
+    .edit-button:hover {
+      background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+      background-color:#5cbf2a;
+    }
+    .edit-button:active {
+      position:relative;
+      top:1px;
+    }
+
+    .addModal {
+      width: 60%;
+      text-align: center;
+      position: absolute;
+      padding: .5rem;
+      z-index: 10;
+      top: 30vh;
+      left: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .addModal p{
+        margin: 5px;
+    }
+
+    .addModal form{
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .addModal form button {
+      font: inherit;
+      font-size: large;
+      padding: .5rem;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: #3b7e52;
+      color: white;
+      border: 1px solid #3b7e52;
+      margin: 1rem 1rem;
+      cursor: pointer;
+    }
+    
+    .addModal form button:hover{
+      background-color: #6c9f7e;
+      border-color: #6aa07d;
+    }
+
+    /* Modal btns */
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #3b7e52;
+  color: white;
+  border: 1px solid #3b7e52;
+  margin: 2rem 1rem;
+}
+
+.btn:hover {
+  background-color: #3b7e52;
+  border-color: #3b7e52;
+}
+
+.btn--alt {
+  background-color: transparent;
+  color: #3b7e52;
+}
+
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.marginTop {
+  margin-top: 2%;
+}

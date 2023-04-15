@@ -1,0 +1,73 @@
+.LB{
+    display: flexbox;
+    background-color: #FFFACA;
+    width: 95%;
+    height: 100%;
+    border: 1px solid green;
+    border-radius: 5%;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: -5px;
+}
+
+.LB img {
+    width:20px;
+    height:20px;
+    margin-top: 7px;
+    margin-left: 95%;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.gridLB{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin-bottom: 1%;
+    width: 100%;
+    border: 1px black solid;
+    background-color: #3b7e52;
+    padding: -5px;
+}
+
+.grid-titleLB{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin-bottom: 1%;
+    width: 100%;
+    border: 1px black solid;
+    background-color: #3b7e52;
+    color: white;
+}
+
+.grid-itemLB{
+    place-self: center;
+    font-size: 27px;
+    padding: 6.5%;
+    color: white;
+}
+
+.grid-item-user-rank{
+   
+        place-self: center;
+        font-size: 27px;
+        padding: 2%;
+        box-shadow: 2px 2px 8px rgba(.1, 0, 0, 0.3);
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+}
+
+.grid-item-rank, .grid-item-user, .grid-item-points{
+    place-self: center;
+    padding: 5%;
+    font-size: 35px;
+}
+
+

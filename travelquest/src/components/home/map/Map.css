@@ -1,0 +1,45 @@
+.map-h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  
+  .google-map {
+    height: 50vh;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 5%;
+  }
+
+  .markerLabel{
+    bottom: 18px;
+    position: relative;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  @media screen and (min-width: 799px) {
+    .google-map {
+      height: 80vh;
+    }
+  
+    .map-h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+  
+    .pin {
+      width: 15vw;
+    }
+  
+    .pin-icon {
+      font-size: 10vw;
+    }
+  }

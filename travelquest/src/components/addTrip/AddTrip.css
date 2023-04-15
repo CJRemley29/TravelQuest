@@ -1,0 +1,44 @@
+.google-map {
+    height: 70vh;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 4%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  form{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eccb26;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 20% 20% 20%;
+    border-radius: 6%;
+    color: black;
+  }
+
+  
+label {
+    text-align: left;
+    padding: .25rem 0;
+
+}
+
+input {
+    margin: .5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

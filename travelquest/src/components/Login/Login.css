@@ -1,0 +1,59 @@
+.login {
+    text-align: center;
+    display: contents;
+    min-height: 80vh;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.auth-form, .login-form, .registration-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #eccb26;
+    right: 15%;
+    height: fit-content;
+}
+
+.registration-form{ 
+    font-size: 18px;
+}
+
+@media screen and (min-width: 600px){
+    .auth-form{
+        padding: 3rem;
+        margin: .5rem;
+        margin-left: 35%;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 30%;
+    }
+}
+
+label {
+    text-align: left;
+    padding: .25rem 0;
+
+}
+
+input {
+    margin: .5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link-button {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}

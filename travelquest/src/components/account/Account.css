@@ -1,0 +1,28 @@
+.data-box {
+    width: 400px;
+    padding: 20px;
+    background-color: #eccb26;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .data-box-header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .data-box-item {
+    margin-bottom: 30px;
+    font-size: 20px;
+
+  }
+  
+  .data-box-item-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .data-box-item-value {
+    font-style: italic;
+  }
