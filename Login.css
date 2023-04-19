@@ -1,0 +1,57 @@
+/* Shared styles */
+.login-container, .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgreen;
+    border: 5px solid white;
+  }
+  
+  .login-box, .signup-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border: 5px solid darkgreen;
+  }
+  
+  .login-heading, .signup-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  /* Login page specific styles */
+  .login-container {
+    background-color: lightgreen;
+  }
+  
+  /* Signup page specific styles */
+  .signup-container {
+    background-color: lightblue;
+  }
+  

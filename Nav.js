@@ -1,20 +1,20 @@
 import React, {Component} from 'react'
-import '../styles/Nav.css'
+import './Nav.css'
+import { Link } from "react-router-dom";
 
-class Nav extends Component {
-  render () {
-    return (
-    <ul>
-      <li className='title'>Travel Quest</li>
-      <li><a href="#logout">Log Out</a></li>
-      <li><a href="#board">Leaderboard</a></li>
-      <li><a href="#map">Map</a></li>
-      <li><a href="#home">Home</a></li>
-
-    </ul>
-    )
-  }
+function Nav () {
+   
+  return(
+    <div className="navbar">
+      <div className="logo">Travel Quest</div>
+       <ul className="nav-links">
+        <li><Link to="/">Leaderboard</Link></li>
+        <li> <Link to="/Login">Login</Link></li> 
+        <li> <Link to="/Map">Map</Link></li>
+       </ul>
+    </div>
+  );
 
 }
 
-export default Nav
+export default Nav;

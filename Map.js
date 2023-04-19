@@ -3,6 +3,7 @@ import "leaflet/dist/leaflet.css";
 import {MapContainer, TileLayer, Marker, Popup, useMap} from'react-leaflet'
 import {Icon} from "leaflet";
 import { useState } from "react";
+import { Data } from './Database';
 
 const tate = [33.95048417257601, -83.37506764857703];
 const customIcon = new Icon ({
@@ -12,7 +13,6 @@ const customIcon = new Icon ({
 let score = 1;
 
 function addTrip() {
-    alert('You clicked me!');
     navigator.geolocation.getCurrentPosition(showPosition);
     return score;
 }
