@@ -5,9 +5,11 @@ import { Data } from './Database';
 
 export default function Leaderboard() {
 
-  useEffect(() =>
-  
-  );
+  useEffect(() =>{
+    fetch('http://localhost:4000/routes/user/').then((res)=>{
+      return res.json();
+    }).then
+  },[]);
 
   const clickHandle = (e) => {
     console.log(e.target);
